@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	var myscroll=new IScroll("#h-iscroll",{
 		mouseWheel:true,
-		scrollbars:true,
+		scrollbars:false,
 		
 	});
 	var mySwiper = new Swiper ('.h-bannerbox',{
