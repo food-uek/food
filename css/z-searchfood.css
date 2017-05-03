@@ -95,15 +95,16 @@ body {
 }
 /*内容开始*/
 #wrapper {
-    /*position: absolute;*/
-    /*z-index: 1;*/
-    /*top: 45px;*/
-    /*bottom: 48px;*/
-    /*left: 0;*/
+    position: absolute;
+    z-index: 1;
+    top: .88rem;
+    bottom: 0;
+    left: 0;
     width: 100%;
     overflow: hidden;
-    background: #eee;
-    margin-top: .88rem;
+    /*background: #eee;*/
+    /*margin-top: .88rem;*/
+    height:12.46rem;
 }
 #scroller {
     /*height: 100%;*/
@@ -111,14 +112,15 @@ body {
     z-index: 1;
     width:100%;
     user-select: none;
-    background: #fff;
+    /*background: #fff;*/
     padding:0 .36rem;
     box-sizing: border-box;
+    overflow: hidden;
 }
 /*第一部分开始*/
-.first{
-    display:none;
-}
+/*.first{*/
+    /*display:none;*/
+/*}*/
 #scroller .z-hot{
     margin-top: .45rem;
     width:1.85rem;
@@ -189,9 +191,9 @@ body {
 }
 /*第一部分结束*/
 /*第二部分开始*/
-/*.two{*/
-    /*display: none;*/
-/*}*/
+.two{
+    display: none;
+}
 .z-beijingtu{
     height:.47rem;
     background-image: url("../img/z-img/z-beijing.png");
