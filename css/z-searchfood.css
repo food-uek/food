@@ -118,9 +118,9 @@ body {
     overflow: hidden;
 }
 /*第一部分开始*/
-/*.first{*/
-    /*display:none;*/
-/*}*/
+.first{
+    display:none;
+}
 #scroller .z-hot{
     margin-top: .45rem;
     width:1.85rem;
@@ -191,9 +191,9 @@ body {
 }
 /*第一部分结束*/
 /*第二部分开始*/
-.two{
-    display: none;
-}
+/*.two{*/
+    /*display: none;*/
+/*}*/
 .z-beijingtu{
     height:.47rem;
     background-image: url("../img/z-img/z-beijing.png");

@@ -12,8 +12,8 @@ body{
 /*组菜成功*/
 .c-top{
     width: 100%;
-    height: 1.22rem;
-    background: #FFDC3B;
+    height: 1.23rem;
+    background-image: url("../img/c-img/122.png");
 }
 .c-top>div{
     margin: 0 0.37rem;
@@ -47,7 +47,7 @@ section.zhan{
     top:0;
     height: 0.8rem;
     width: 100%;
-    background: #ffdc3b;
+    background-image: url("../img/c-img/80.png");
     z-index: -1;
 }
 /*主体部分*/
