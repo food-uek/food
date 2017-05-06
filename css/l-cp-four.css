@@ -7,11 +7,11 @@
 	padding-right: 0.24rem;
 	position: relative;
 }
-.l-banner>p{
-	font-size: 0.7rem;
-	float: left;
-	font-family: "微软雅黑";
-	color: #FFf;
+.l-banner>a{
+    display: block;
+    float: left;
+    height:.48rem;
+    margin-top: -0.2rem;
 }
 .l-banner>img{
 	margin: 0 auto;
