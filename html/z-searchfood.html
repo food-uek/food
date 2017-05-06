@@ -4,31 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <title>搜索食物</title>
-    <script type="text/javascript" src="../js/common/iscroll.js"></script>
-    <!--<script src="js/common/Zepto.js"></script>-->
     <link rel="stylesheet" href="../css/z-searchfood.css">
+    <script src="../js/common/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/common/iscroll.js"></script>
+    <script type="text/javascript" src="../js/common/common.js"></script>
+    <script src="../js/z-searchfood.js"></script>
 </head>
-<script>
-    (function (doc, win) {
-        var docEl = doc.documentElement,
-            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-            recalc = function () {
-                var clientWidth = docEl.clientWidth;
-                if (!clientWidth) return;
-                if(clientWidth>=750){
-                    // 这里的640 取决于设计稿的宽度
-                    docEl.style.fontSize = '100px';
-                }else{
-                    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
-                }
-            };
-
-        if (!doc.addEventListener) return;
-        win.addEventListener(resizeEvt, recalc, false);
-        doc.addEventListener('DOMContentLoaded', recalc, false);
-    })(document, window);
-</script>
 <body>
+<!--遮罩开始-->
+<div class="z-zhezhaoz">
+    <div class="z-downz">
+        <div class="z-down z-down2 z-down1">· 按住说话 ·</div>
+        <div class="z-down z-down3">· 正在识别 ·</div>
+        <div class="z-zr">查找营养早餐...</div>
+        <img class="z-false" src="../img/z-img/z-false.png" alt="">
+    </div>
+    <p class="z-move">上划取消搜索</p>
+</div>
+<!--遮罩结束-->
+<!--搜索中开始-->
+<div class="z-sousuoz">
+    <!--<div class="z-sousuozi">-->
+        <a class="z-sxiangguan" href="javascript:;">
+            <img class="z-sousuobox1" src="../img/z-img/z-sousuobox.png" alt="">
+            <span class="z-soucai">搜菜谱</span>
+            <img class="z-xiaoyu" src="../img/z-img/z-xiaoyu.png" alt="">
+        </a>
+        <a class="z-xgson" href="javascript:;">
+            <span>西式</span>
+            <span>早餐</span>
+        </a>
+        <a class="z-xgson" href="javascript:;">
+            <span>营养</span>
+            <span>早餐</span>
+        </a>
+        <a class="z-xgson" href="javascript:;">
+            <span>英式</span>
+            <span>早餐</span>
+        </a>
+        <a class="z-xgson" href="javascript:;">
+            <span>美式</span>
+            <span>早餐</span>
+        </a>
+        <a class="z-xgson" href="javascript:;">
+            <span>美味</span>
+            <span>早餐</span>
+        </a>
+        <a class="z-sxiangguan" href="javascript:;">
+            <img class="z-sousuobox1" src="../img/z-img/z-sousuobox.png" alt="">
+            <span class="z-soucai">搜哈友</span>
+            <img class="z-xiaoyu" src="../img/z-img/z-xiaoyu.png" alt="">
+        </a>
+        <a class="z-sxiangguan" href="javascript:;">
+            <img class="z-sousuobox1" src="../img/z-img/z-sousuobox.png" alt="">
+            <span class="z-soucai">搜帖子</span>
+            <img class="z-xiaoyu" src="../img/z-img/z-xiaoyu.png" alt="">
+        </a>
+    <!--</div>-->
+</div>
+<!--搜索中结束-->
 <!--头部开始-->
 <div id="header">
     <a href="javascript:;">
@@ -44,8 +78,8 @@
 <!--内容开始-->
 <div id="wrapper">
     <div id="scroller">
-        <ul>
-            <li class="first">
+        <ul class="z-total">
+            <li class="z-searchz z-index">
                 <img class="z-hot" class src="../img/z-img/z-hot.png" alt="">
                 <div class="z-juti">
                     <div class="z-juti1">
@@ -89,7 +123,7 @@
                 </div>
                 <div class="rect"></div>
             </li>
-            <li class="two">
+            <li class="z-searchz ">
                 <div class="z-beijingtu"></div>
                 <div class="z-box">
                     <p class="z-t-c">已为你找到你所需要的相关信息</p>
@@ -172,31 +206,427 @@
                             </div>
                         </div>
                     </a>
+                    <a href="javascript:;">
+                        <div class="z-mokuai">
+                            <div class="z-w-top">
+                                <img class="z-w-1" src="../img/z-img/z-w-1.png" alt="">
+                                <div>
+                                    <p class="z-title">美式鲜果沙拉</p>
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-sgray.png" alt="">
+                                </div>
+                                <p class="z-title-e">MeasureIngredient cupsChicken stock</p>
+                                <div>
+                                    <div class="z-p">味道好</div>
+                                    <div class="z-p">制作简单</div>
+                                    <img class="z-w-q" src="../img/z-img/z-w-q.png" alt="">
+                                    <p class="z-w-a">厨房问答</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="z-w-gongneng">
+                                    <img class="z-w-gongnengtu z-w-gongnengtu1" src="../img/z-img/z-w-shoucang.png" alt="">
+                                    <p class="z-w-w">收藏</p>
+                                    <p class="z-w-w z-w-t">4897</p>
+                                </div>
+                                <div class="z-w-gongneng">
+                                    <img class="z-w-gongnengtu" src="../img/z-img/z-w-xiaoxi.png" alt="">
+                                    <p class="z-w-w">评论</p>
+                                    <p class="z-w-w z-w-t">4897</p>
+                                </div>
+                                <div class="z-w-gongneng">
+                                    <img class="z-w-gongnengtu" src="../img/z-img/z-w-dianzan.png" alt="">
+                                    <p class="z-w-w">赞</p>
+                                    <p class="z-w-w z-w-t">4897</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:;">
+                        <div class="z-mokuai">
+                            <div class="z-w-top">
+                                <img class="z-w-1" src="../img/z-img/z-w-1.png" alt="">
+                                <div>
+                                    <p class="z-title">美式鲜果沙拉</p>
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-sgray.png" alt="">
+                                </div>
+                                <p class="z-title-e">MeasureIngredient cupsChicken stock</p>
+                                <div>
+                                    <div class="z-p">味道好</div>
+                                    <div class="z-p">制作简单</div>
+                                    <img class="z-w-q" src="../img/z-img/z-w-q.png" alt="">
+                                    <p class="z-w-a">厨房问答</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="z-w-gongneng">
+                                    <img class="z-w-gongnengtu z-w-gongnengtu1" src="../img/z-img/z-w-shoucang.png" alt="">
+                                    <p class="z-w-w">收藏</p>
+                                    <p class="z-w-w z-w-t">4897</p>
+                                </div>
+                                <div class="z-w-gongneng">
+                                    <img class="z-w-gongnengtu" src="../img/z-img/z-w-xiaoxi.png" alt="">
+                                    <p class="z-w-w">评论</p>
+                                    <p class="z-w-w z-w-t">4897</p>
+                                </div>
+                                <div class="z-w-gongneng">
+                                    <img class="z-w-gongnengtu" src="../img/z-img/z-w-dianzan.png" alt="">
+                                    <p class="z-w-w">赞</p>
+                                    <p class="z-w-w z-w-t">4897</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:;">
+                        <div class="z-mokuai">
+                            <div class="z-w-top">
+                                <img class="z-w-1" src="../img/z-img/z-w-1.png" alt="">
+                                <div>
+                                    <p class="z-title">美式鲜果沙拉</p>
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-sgray.png" alt="">
+                                </div>
+                                <p class="z-title-e">MeasureIngredient cupsChicken stock</p>
+                                <div>
+                                    <div class="z-p">味道好</div>
+                                    <div class="z-p">制作简单</div>
+                                    <img class="z-w-q" src="../img/z-img/z-w-q.png" alt="">
+                                    <p class="z-w-a">厨房问答</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="z-w-gongneng">
+                                    <img class="z-w-gongnengtu z-w-gongnengtu1" src="../img/z-img/z-w-shoucang.png" alt="">
+                                    <p class="z-w-w">收藏</p>
+                                    <p class="z-w-w z-w-t">4897</p>
+                                </div>
+                                <div class="z-w-gongneng">
+                                    <img class="z-w-gongnengtu" src="../img/z-img/z-w-xiaoxi.png" alt="">
+                                    <p class="z-w-w">评论</p>
+                                    <p class="z-w-w z-w-t">4897</p>
+                                </div>
+                                <div class="z-w-gongneng">
+                                    <img class="z-w-gongnengtu" src="../img/z-img/z-w-dianzan.png" alt="">
+                                    <p class="z-w-w">赞</p>
+                                    <p class="z-w-w z-w-t">4897</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:;">
+                        <div class="z-mokuai">
+                            <div class="z-w-top">
+                                <img class="z-w-1" src="../img/z-img/z-w-1.png" alt="">
+                                <div>
+                                    <p class="z-title">美式鲜果沙拉</p>
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-sgray.png" alt="">
+                                </div>
+                                <p class="z-title-e">MeasureIngredient cupsChicken stock</p>
+                                <div>
+                                    <div class="z-p">味道好</div>
+                                    <div class="z-p">制作简单</div>
+                                    <img class="z-w-q" src="../img/z-img/z-w-q.png" alt="">
+                                    <p class="z-w-a">厨房问答</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="z-w-gongneng">
+                                    <img class="z-w-gongnengtu z-w-gongnengtu1" src="../img/z-img/z-w-shoucang.png" alt="">
+                                    <p class="z-w-w">收藏</p>
+                                    <p class="z-w-w z-w-t">4897</p>
+                                </div>
+                                <div class="z-w-gongneng">
+                                    <img class="z-w-gongnengtu" src="../img/z-img/z-w-xiaoxi.png" alt="">
+                                    <p class="z-w-w">评论</p>
+                                    <p class="z-w-w z-w-t">4897</p>
+                                </div>
+                                <div class="z-w-gongneng">
+                                    <img class="z-w-gongnengtu" src="../img/z-img/z-w-dianzan.png" alt="">
+                                    <p class="z-w-w">赞</p>
+                                    <p class="z-w-w z-w-t">4897</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:;">
+                        <div class="z-mokuai">
+                            <div class="z-w-top">
+                                <img class="z-w-1" src="../img/z-img/z-w-1.png" alt="">
+                                <div>
+                                    <p class="z-title">美式鲜果沙拉</p>
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-sgray.png" alt="">
+                                </div>
+                                <p class="z-title-e">MeasureIngredient cupsChicken stock</p>
+                                <div>
+                                    <div class="z-p">味道好</div>
+                                    <div class="z-p">制作简单</div>
+                                    <img class="z-w-q" src="../img/z-img/z-w-q.png" alt="">
+                                    <p class="z-w-a">厨房问答</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="z-w-gongneng">
+                                    <img class="z-w-gongnengtu z-w-gongnengtu1" src="../img/z-img/z-w-shoucang.png" alt="">
+                                    <p class="z-w-w">收藏</p>
+                                    <p class="z-w-w z-w-t">4897</p>
+                                </div>
+                                <div class="z-w-gongneng">
+                                    <img class="z-w-gongnengtu" src="../img/z-img/z-w-xiaoxi.png" alt="">
+                                    <p class="z-w-w">评论</p>
+                                    <p class="z-w-w z-w-t">4897</p>
+                                </div>
+                                <div class="z-w-gongneng">
+                                    <img class="z-w-gongnengtu" src="../img/z-img/z-w-dianzan.png" alt="">
+                                    <p class="z-w-w">赞</p>
+                                    <p class="z-w-w z-w-t">4897</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:;">
+                        <div class="z-mokuai">
+                            <div class="z-w-top">
+                                <img class="z-w-1" src="../img/z-img/z-w-1.png" alt="">
+                                <div>
+                                    <p class="z-title">美式鲜果沙拉</p>
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-sgray.png" alt="">
+                                </div>
+                                <p class="z-title-e">MeasureIngredient cupsChicken stock</p>
+                                <div>
+                                    <div class="z-p">味道好</div>
+                                    <div class="z-p">制作简单</div>
+                                    <img class="z-w-q" src="../img/z-img/z-w-q.png" alt="">
+                                    <p class="z-w-a">厨房问答</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="z-w-gongneng">
+                                    <img class="z-w-gongnengtu z-w-gongnengtu1" src="../img/z-img/z-w-shoucang.png" alt="">
+                                    <p class="z-w-w">收藏</p>
+                                    <p class="z-w-w z-w-t">4897</p>
+                                </div>
+                                <div class="z-w-gongneng">
+                                    <img class="z-w-gongnengtu" src="../img/z-img/z-w-xiaoxi.png" alt="">
+                                    <p class="z-w-w">评论</p>
+                                    <p class="z-w-w z-w-t">4897</p>
+                                </div>
+                                <div class="z-w-gongneng">
+                                    <img class="z-w-gongnengtu" src="../img/z-img/z-w-dianzan.png" alt="">
+                                    <p class="z-w-w">赞</p>
+                                    <p class="z-w-w z-w-t">4897</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:;">
+                        <div class="z-mokuai">
+                            <div class="z-w-top">
+                                <img class="z-w-1" src="../img/z-img/z-w-1.png" alt="">
+                                <div>
+                                    <p class="z-title">美式鲜果沙拉</p>
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-sgray.png" alt="">
+                                </div>
+                                <p class="z-title-e">MeasureIngredient cupsChicken stock</p>
+                                <div>
+                                    <div class="z-p">味道好</div>
+                                    <div class="z-p">制作简单</div>
+                                    <img class="z-w-q" src="../img/z-img/z-w-q.png" alt="">
+                                    <p class="z-w-a">厨房问答</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="z-w-gongneng">
+                                    <img class="z-w-gongnengtu z-w-gongnengtu1" src="../img/z-img/z-w-shoucang.png" alt="">
+                                    <p class="z-w-w">收藏</p>
+                                    <p class="z-w-w z-w-t">4897</p>
+                                </div>
+                                <div class="z-w-gongneng">
+                                    <img class="z-w-gongnengtu" src="../img/z-img/z-w-xiaoxi.png" alt="">
+                                    <p class="z-w-w">评论</p>
+                                    <p class="z-w-w z-w-t">4897</p>
+                                </div>
+                                <div class="z-w-gongneng">
+                                    <img class="z-w-gongnengtu" src="../img/z-img/z-w-dianzan.png" alt="">
+                                    <p class="z-w-w">赞</p>
+                                    <p class="z-w-w z-w-t">4897</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:;">
+                        <div class="z-mokuai">
+                            <div class="z-w-top">
+                                <img class="z-w-1" src="../img/z-img/z-w-1.png" alt="">
+                                <div>
+                                    <p class="z-title">美式鲜果沙拉</p>
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-sgray.png" alt="">
+                                </div>
+                                <p class="z-title-e">MeasureIngredient cupsChicken stock</p>
+                                <div>
+                                    <div class="z-p">味道好</div>
+                                    <div class="z-p">制作简单</div>
+                                    <img class="z-w-q" src="../img/z-img/z-w-q.png" alt="">
+                                    <p class="z-w-a">厨房问答</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="z-w-gongneng">
+                                    <img class="z-w-gongnengtu z-w-gongnengtu1" src="../img/z-img/z-w-shoucang.png" alt="">
+                                    <p class="z-w-w">收藏</p>
+                                    <p class="z-w-w z-w-t">4897</p>
+                                </div>
+                                <div class="z-w-gongneng">
+                                    <img class="z-w-gongnengtu" src="../img/z-img/z-w-xiaoxi.png" alt="">
+                                    <p class="z-w-w">评论</p>
+                                    <p class="z-w-w z-w-t">4897</p>
+                                </div>
+                                <div class="z-w-gongneng">
+                                    <img class="z-w-gongnengtu" src="../img/z-img/z-w-dianzan.png" alt="">
+                                    <p class="z-w-w">赞</p>
+                                    <p class="z-w-w z-w-t">4897</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:;">
+                        <div class="z-mokuai">
+                            <div class="z-w-top">
+                                <img class="z-w-1" src="../img/z-img/z-w-1.png" alt="">
+                                <div>
+                                    <p class="z-title">美式鲜果沙拉</p>
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-sgray.png" alt="">
+                                </div>
+                                <p class="z-title-e">MeasureIngredient cupsChicken stock</p>
+                                <div>
+                                    <div class="z-p">味道好</div>
+                                    <div class="z-p">制作简单</div>
+                                    <img class="z-w-q" src="../img/z-img/z-w-q.png" alt="">
+                                    <p class="z-w-a">厨房问答</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="z-w-gongneng">
+                                    <img class="z-w-gongnengtu z-w-gongnengtu1" src="../img/z-img/z-w-shoucang.png" alt="">
+                                    <p class="z-w-w">收藏</p>
+                                    <p class="z-w-w z-w-t">4897</p>
+                                </div>
+                                <div class="z-w-gongneng">
+                                    <img class="z-w-gongnengtu" src="../img/z-img/z-w-xiaoxi.png" alt="">
+                                    <p class="z-w-w">评论</p>
+                                    <p class="z-w-w z-w-t">4897</p>
+                                </div>
+                                <div class="z-w-gongneng">
+                                    <img class="z-w-gongnengtu" src="../img/z-img/z-w-dianzan.png" alt="">
+                                    <p class="z-w-w">赞</p>
+                                    <p class="z-w-w z-w-t">4897</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:;">
+                        <div class="z-mokuai">
+                            <div class="z-w-top">
+                                <img class="z-w-1" src="../img/z-img/z-w-1.png" alt="">
+                                <div>
+                                    <p class="z-title">美式鲜果沙拉</p>
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-star.png" alt="">
+                                    <img class="z-w-star" src="../img/z-img/z-w-sgray.png" alt="">
+                                </div>
+                                <p class="z-title-e">MeasureIngredient cupsChicken stock</p>
+                                <div>
+                                    <div class="z-p">味道好</div>
+                                    <div class="z-p">制作简单</div>
+                                    <img class="z-w-q" src="../img/z-img/z-w-q.png" alt="">
+                                    <p class="z-w-a">厨房问答</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="z-w-gongneng">
+                                    <img class="z-w-gongnengtu z-w-gongnengtu1" src="../img/z-img/z-w-shoucang.png" alt="">
+                                    <p class="z-w-w">收藏</p>
+                                    <p class="z-w-w z-w-t">4897</p>
+                                </div>
+                                <div class="z-w-gongneng">
+                                    <img class="z-w-gongnengtu" src="../img/z-img/z-w-xiaoxi.png" alt="">
+                                    <p class="z-w-w">评论</p>
+                                    <p class="z-w-w z-w-t">4897</p>
+                                </div>
+                                <div class="z-w-gongneng">
+                                    <img class="z-w-gongnengtu" src="../img/z-img/z-w-dianzan.png" alt="">
+                                    <p class="z-w-w">赞</p>
+                                    <p class="z-w-w z-w-t">4897</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </li>
-            <li class="three">
+            <li class="z-searchz">
                 <div class="z-beijingtu"></div>
                 <div class="z-box1">
                     <img class="z-wures" src="../img/z-img/z-wures.png" alt="">
                 </div>
             </li>
-            <li class="four">
-                <img class="z-zhezhao" src="../img/z-img/z-zhezhao.png" alt="">
-            </li>
         </ul>
-
     </div>
 </div>
 <!--内容结束-->
-<!--<div id="footer"></div>-->
+<script>
+    window.onload=function(){
+//        setTimeout(function () {
+        var myScroll;
+        myScroll = new IScroll('#wrapper', {
+            freeScroll: true,
+            scrollbars:true,
+            fadeScrollbars:true,
+            checkDOMChanges:true
+        });
+//        },200);
+        function Refresh(){
+            setInterval(function () {
+                myScroll.refresh();
+//                alert(1);
+            }, 0);
+        };
+        Refresh();
+    }
+</script>
 </body>
 </html>
-<script type="text/javascript">
-    var myScroll;
-    myScroll = new IScroll('#wrapper', {
-        freeScroll: true,
-//        scrollbars:true,
-//        fadeScrollbars:true
-    });
-
-</script>
