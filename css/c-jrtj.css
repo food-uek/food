@@ -1,2 +1,127 @@
 @import url(c-header.css);
 @import url(common.css);
+body{
+    font-size: 16px;
+    background: #efefef;
+}
+/*标题栏*/
+.c-biaoti{
+    width: 100%;
+    height: .78rem;
+    background-image: url("../img/c-img/80.png");
+    padding-top: 0.1rem;
+}
+.c-image{
+    width: 4.32rem;
+    height: 0.6rem;
+    background-image: url("../img/c-img/can.png");
+    background-size: cover;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.c-image div{
+    width: .82rem;
+    height: .32rem;
+    font-size: 0.24rem;
+    color: #ffdc3b;
+    margin-top: 0.15rem;
+    text-align: center;
+    position: relative;
+}
+.c-image div:after,.c-image div:before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0.04rem;
+    height: 0.04rem;
+    background: #fff;
+    border-radius: 50%;
+    top: .14rem;
+}
+.c-image div:after{
+    right: .06rem;
+}
+.c-image div:before{
+    left: .06rem;
+}
+.c-image div.first{
+    background: #ffdc3b;
+    color: #fff;
+    border-radius: .16rem;
+}
+/*标题栏结束*/
+/*内容*/
+.c-tj-con{
+    width: 100%;
+    position: relative;
+}
+.c-can-con{
+    margin: .38rem .24rem;
+    display: none;
+    position: relative;
+}
+.c-can-con.active{
+    display: block;
+}
+.c-can-con >.c-tj{
+    width: 100%;
+}
+.c-w-ba{
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: 8.6rem;
+    z-index: -1;
+    top:1.7rem;
+}
+.c-description{
+    position: relative;
+    bottom: 0;
+}
+.c-description >.c-won{
+    padding-top: 0.2rem;
+    text-align: center;
+}
+.c-description >.c-won span{
+    font-size: .26rem;
+    color: #333;
+}
+.c-description >.c-won >img{
+    width: 1rem;
+
+}
+.c-d-eng{
+    text-align: center;
+    font-size: .26rem;
+    text-transform: uppercase;
+    color: #ffdc3b;
+    font-family: "San Francisco Display";
+}
+.splc{
+    margin: .2rem auto;
+    width: 1.84rem;
+    height: .65rem;
+    border-radius: .33rem;
+    background-image: url("../img/c-img/lc.png");
+    background-size: cover;
+    box-shadow: 0 0 .15rem 0 #ffdc3b;
+}
+.c-line{
+    width: 2.4rem;
+    height: 0.08rem;
+    position: relative;
+    bottom: -.6rem;
+    left: 50%;
+    margin-left: -1.2rem;
+}
+.c-line >li{
+    width: .5rem;
+    height: 100%;
+    background: #fff;
+    float: left;
+    margin-right: .28rem;
+}
+.c-line >li.c-active{
+    background: #ffdc3b;
+}
