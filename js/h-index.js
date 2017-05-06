@@ -12,4 +12,13 @@ $(document).ready(function(){
 		pagination:false,
 		slidePerView:2,
 	})
+	$('.q-footer-two').on('touchstart',function(){
+		$('.q-footer').addClass('q-active');
+		$('.q-zhao').addClass('q-active');
+	})
+	$('.q-chacha').on('touchstart',function(){
+		$('.q-footer').removeClass('q-active');
+		$('.q-zhao').removeClass('q-active');
+	})
+	
 })
