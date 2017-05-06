@@ -1,14 +1,11 @@
 $(function(){
-	
-	
-	
 	$('.q-ti > li').on('touchstart',function(){
 		$('.q-ti > li').removeClass('q-active');
 		$(this).addClass('q-active');
-		$('div.q-phone > form').addClass('q-active');
-		console.log($(this).index());
-		$('div.q-phone > form').eq($(this).index()).removeClass('q-active');
-	});
+		$('form.q-phone > div').addClass('q-active');
+		console.log($(this).index())
+		$('form.q-phone > div').eq($(this).index()).removeClass('q-active');
+	})
 	function cha(str1,str2){
 		$(str1).focus(function(){
 			$(str2).addClass('q-active').on('touchstart',function(){
@@ -16,8 +13,8 @@ $(function(){
 			})
 		})
 	}
-	cha('.q-phone > form.q-form1 > input[type="text"]','.q-form1 > div.q-chacha1');
-	cha('.q-phone > form.q-form2 > input[type="text"]','.q-form2 > div.q-chacha1');
+	cha('.q-form1 > input[type="text"]:first-of-type','.q-form1 > div.q-chacha1');
+	
 	let falg=true;
 	$('.q-phone > form > .yj').on('touchstart',function(){
 		let qq=this.nextElementSibling.value;;
@@ -43,11 +40,14 @@ $(function(){
 					rangelength:[11,12],
 					number:true,
 				},
-				mima1: {
+				zcma1: {
 					required: true,
 					minlength: 6,
 				},
-//				
+				yzm:{
+					required: true,
+					rangelength:[4,5],
+				},
 			},
 			messages:{
 				phone:{
@@ -55,11 +55,15 @@ $(function(){
 					rangelength: $.validator.format(''),
 					number:'',
 				},
-				mima1: {
+				zcma1: {
 					required: "",
 					email: "",
 					minlength: $.validator.format(''),
 				},
+				yzm:{
+					required: '',
+					rangelength: $.validator.format(''),
+				}
 			},
 		})
 		$('.q-form2').validate({
@@ -69,21 +73,28 @@ $(function(){
 					email: true,
 //						
 				},
-				mima2: {
+				zcma1: {
 					required: true,
 					minlength: 6,
-				}
+				},
+				yzm:{
+					required: true,
+					rangelength:[4,5],
+				},
 			},
 			messages:{
-				email:{
+				phone:{
 					required:' ',
 					rangelength: $.validator.format(''),
 					number:'',
 				},
-				mima2: {
-					required: "",
-					email: "",
-					minlength: $.validator.format(''),
+				zcma1: {
+					required: '',
+					minlength: 6,
+				},
+				yzm:{
+					required: '',
+					rangelength:[4,5],
 				},
 			},
 		})
