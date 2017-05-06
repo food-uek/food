@@ -83,39 +83,27 @@ body {
     margin-top: .2rem;
 }
 /*头部结束*/
-#footer {
-    position: absolute;
-    z-index: 2;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 48px;
-    background: #ffdc3b;
-    padding: 0;
-}
 /*内容开始*/
 #wrapper {
     position: absolute;
     z-index: 1;
     top: .88rem;
-    bottom: 0;
     left: 0;
+    bottom:0rem;
     width: 100%;
+    height: 100%;
     overflow: hidden;
-    /*background: #eee;*/
-    /*margin-top: .88rem;*/
-    height:12.46rem;
 }
 #scroller {
-    /*height: 100%;*/
     position: absolute;
+    left:0;
+    top:-.88rem;
     z-index: 1;
     width:100%;
+    height: auto;
     user-select: none;
-    /*background: #fff;*/
-    padding:0 .36rem;
-    box-sizing: border-box;
-    overflow: hidden;
+    /*box-sizing: border-box;*/
+    /*overflow: hidden;*/
 }
 /*第一部分开始*/
 /*.first{*/
@@ -124,12 +112,14 @@ body {
 #scroller .z-hot{
     margin-top: .45rem;
     width:1.85rem;
+    padding:0 .36rem;
 }
 #scroller .z-juti .z-juti1{
     height:.5rem;
     font-size: .24rem;
     font-weight: bold;
     margin-top: .25rem;
+    padding:0 .36rem;
 }
 #scroller .z-juti .z-juti1 a{
     display: block;
@@ -149,7 +139,7 @@ body {
     line-height: .5rem;
 }
 #scroller .rect{
-    margin: .5rem -.36rem;
+    margin: .5rem 0;
     height:.25rem;
     background: #f8f8f8;
 }
@@ -157,6 +147,7 @@ body {
     height:.5rem;
     font-size: .24rem;
     margin-top: .25rem;
+    padding:0 .36rem;
 }
 #scroller .z-hisjuti a{
     display: block;
@@ -179,7 +170,7 @@ body {
 #scroller .z-shanchu{
     margin-top: .5rem;
     position: relative;
-
+    padding:0 .36rem;
 }
 #scroller .z-shanchu .Z-shanchuimg{
     position: absolute;
@@ -188,6 +179,15 @@ body {
     margin-left: -.7rem;
     width: 1.4rem;
     background: white;
+}
+.z-total{
+    position: relative;
+}
+.z-searchz{
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    display: none;
 }
 /*第一部分结束*/
 /*第二部分开始*/
@@ -198,19 +198,22 @@ body {
     height:.47rem;
     background-image: url("../img/z-img/z-beijing.png");
     background-size:cover;
-    margin: 0 -.36rem 0;
+    margin: 0.88rem -.36rem 0;
+    padding:0 .36rem;
 }
 .z-box{
-     width:100%;
+     /*width:100%;*/
      height:auto ;
      background: white;
      box-shadow: 0 0 16px #e6e6e6;
-     margin-top: -.47rem;
+     /*margin-top: -.47rem;*/
+     margin:-0.47rem .36rem 0;
  }
 .z-box .z-t-c{
     font-size: .24rem;
-    padding-top: .3rem;
+    padding-top: .2rem;
     padding-left: .1rem;
+    /*margin-top: .3rem;*/
 }
 .z-box .z-t-e{
     font-size: .22rem;
@@ -241,6 +244,7 @@ body {
     font-size: .22rem;
     float: left;
     padding-right: .2rem;
+    color: black;
 }
 .z-box .z-mokuai .z-w-star{
     width:.2rem;
@@ -313,26 +317,135 @@ body {
     display: none;
 }
 .z-box1{
-    width:100%;
+    /*width:100%;*/
     height:7rem;
     background: white;
     box-shadow: 0 0 16px #e6e6e6;
-    margin-top: -.47rem;
+    /*margin-top: -.47rem;*/
     text-align: center;
+    margin:-0.47rem .36rem 0;
 }
 .z-box1 .z-wures{
-   width: 3.5rem;
+    width: 3.5rem;
     margin-top: 1.75rem;
 }
 /*第三部分结束*/
-/*第四部分开始*/
-.four{
+.z-index{
+    /*z-index: 1000;*/
+    display: block;
+}
+/*遮罩开始*/
+.z-zhezhaoz{
+    /*display: none;*/
+    position: fixed;
+    top:0rem;
+    left:0;
+    z-index: 5;
+    width: 100%;
+    background-image: url("../img/z-img/z-zhezhao.png");
+    background-size: contain;
+    height: 100%;
+    display: none;
+    z-index: 10000;
+}
+.z-downz{
+    margin: 12rem auto 0;
+    height:.6rem;
+    position: relative;
+}
+.z-down{
+    width:2.3rem;
+    height:.6rem;
+    font-size: .28rem;
+    color: white;
+    border-radius: .6rem;
+    background: #ffdc3b;
+    text-align: center;
+    line-height:.6rem ;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.15rem;
+    top:0;
     display: none;
 }
-.z-zhezhao{
-    margin: -.88rem -.36rem;
-    /*width: 100%;*/
-    height: 100%;
+
+.z-zr{
+    padding-left: .4rem;
+    padding-right: .15rem;
+    height:.6rem;
+    line-height: .6rem;
+    border-radius: .25rem;
+    background: white;
+    color: #ffdc3b;
+    font-size: .24rem;
+    position: absolute;
+    top:-3.5rem;
+    left:.35rem;
+    display: none;
 }
-/*第四部分结束*/
+.z-false{
+    width:.32rem;
+    position: absolute;
+    right: .5rem;
+    top:-4rem;
+    display: none;
+}
+.z-down1{
+    display: block;
+}
+.z-move{
+    font-size: .24rem;
+    color: white;
+    margin-top: .15rem;
+    text-align: center;
+}
+/*遮罩结束*/
+/*搜索开始*/
+.z-sousuoz{
+    width:5.65rem;
+    height:7.6rem;
+    background: white;
+    box-shadow: 0 0 21px #dfdfdf;
+    position: absolute;
+    right:.25rem;
+    top:.8rem;
+    z-index: 10;
+    box-sizing: border-box;
+    border: 1px solid #f8f8f8;
+    padding: .15rem .15rem 0;
+    display: none;
+}
+.z-sxiangguan{
+    display: block;
+    padding:.15rem 0;
+    border-bottom: 1px dotted #c8c8c8;
+    color: black;
+}
+.z-sousuobox1{
+    width:.28rem;
+
+}
+.z-soucai{
+    font-size: .24rem;
+    padding-left:.1rem;
+}
+.z-xiaoyu{
+    float: right;
+    width:.17rem;
+}
+.z-xgson{
+    display: block;
+    margin-left: .5rem;
+    border-bottom: 1px dotted #c8c8c8;
+    color: black;
+    font-size: .24rem;
+    padding:.15rem 0;
+}
+.z-xgson span:first-child{
+    color: #d7d7d7;
+}
+.z-xgson span:last-child{
+    color: #2e2e2e;
+}
+/*搜索结束*/
 /*内容结束*/
