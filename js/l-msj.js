@@ -4,6 +4,7 @@ window.onload=function(){
 
  for(let i=0;i<li.length;i++){
      li[i].onmouseover=function(){
+     	
          for(let j=0;j<z.length;j++){
              z[j].style.display="none";
          }

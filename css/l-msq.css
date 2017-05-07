@@ -51,12 +51,12 @@
 	height: 0.32rem;
 	border: 0;
 	border-radius: 0.5rem;
-	background: #FFDC3E;
+	
 	margin-left: 0.2rem;
 	
 }
 .l-banner>.l-t>a:last-child>p{
-	color: #fff;
+		color: #FFDC3E;
 }
 
 .l-banner>.l-t>a>p{
