@@ -256,11 +256,31 @@ body {
     width:1.6rem;
     border-radius: .35rem;
 }
-.first{
+.z-dapeifenlei .first{
     padding:0 .2rem;
     background: #ffde27;
     color:white;
 }
+.z-zhanwei2{
+    height:2.16rem;
+    position: relative;
+}
+/*.z-cardt{*/
+    /*height:2.16rem;*/
+/*}*/
+.z-cardt{
+    position: absolute;
+    left:0;
+    top:0;
+    display: none;
+    height:2.16rem;
+}
+.z-zhanwei2 .first{
+    display: block;
+}
+/*.z-slide{*/
+   /*width: .9rem;*/
+/*}*/
 .z-huadong{
     display: block;
     float: left;

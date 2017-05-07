@@ -349,7 +349,7 @@ body {
     z-index: 10000;
 }
 .z-downz{
-    margin: 12rem auto 0;
+    margin: 10rem auto 0;
     height:.6rem;
     position: relative;
 }
@@ -363,6 +363,7 @@ body {
     text-align: center;
     line-height:.6rem ;
     position: absolute;
+    /*position:fixed;*/
     left: 50%;
     margin-left: -1.15rem;
     top:0;
