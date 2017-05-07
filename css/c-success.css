@@ -175,7 +175,7 @@ section.zhe{
 }
 .c-f-list{
     width: 100%;
-    height: 1.65rem;
+    height: 1.5rem;
 }
 .c-f-list>li{
     width: 1.35rem;
@@ -217,23 +217,23 @@ section.zhe{
 /*已选择*/
 .yixuan{
     width: 100%;
-    height: 0.6rem;
-    margin: 0.2rem 0;
+    height: auto;
+    overflow: hidden;
+    margin: 0 0 0.2rem 0;
 }
-.yixuan>span,.yixuan>.yx-list{
-    float: left;
-}
+
 .yixuan>span{
     font-size: 0.24rem;
     color: #282828;
     line-height: 0.6rem;
 }
 .yixuan>.yx-list{
-    width: 80%;
-    height: 100%;
+    width: 100%;
+    height: .9rem;
+    overflow: hidden;
 }
 .yx-list>li{
-    margin-top: 0;
+    margin-top: .1rem;
 }
 .yixuan >.c-f-list>li:after{
     display: none;
