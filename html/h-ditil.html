@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>详情页</title>
+		<!--meta-->
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="x5-orientation" content="portrait | landscape" />
+		<meta name="screen-orientation" content="portrait">
+		<meta name="x5-fullscreen" content="true" />
+		<meta name="full-screen" content="yes">
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<!--css-->
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/h-detil.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+		<!--script-->
+		<script type="text/javascript" src="../js/common/common.js"></script>
+		<script type="text/javascript" src="../js/common/zepto.min.js"></script>
+		<script src="../js/common/swiper.min.js"></script>
+		<script type="text/javascript" src="../js/common/iscroll.js"></script>
+	</head>
+	<body>
+	<!--头部开始-->
+	<div id="header">
+		<a href="javascript:;"onclick="history.go(-1)">
+	    	<img class="z-return" src="../img/qyh-img/z-return.png" alt=""style="width: 0.41rem;height: auto;margin-top: 0.3rem;">
+		</a>
+	    <img class="z-tupian1" src="../img/h-img/h-check.png" alt=""style="width: 2.31rem; margin-left: 2rem;">
+	    <img class="z-yuyin" src="../img/h-img/sao-icon.png" alt="">
+	</div>
+	<!--主体开始-->
+	<div class="h-main" id="h-iscroll">
+		<div class="h-iscrollBox">	
+			<!--详情开始-->
+			<div class="h-section-1">
+				<img src="../img/h-img/h-bg.png" alt="" class="h-bg" />
+				<div class="h-text1">
+					<div class="img"></div>
+					<div class="title">
+						<img src="../img/h-img/cook-head.png" alt="" />
+						<h5>欧阳</h5>
+						<p>希望看到我的菜谱的时…</p>
+						<span>+关注</span>
+					</div>
+					<div class="text">
+						浦东三黄鸡是一道传统的名菜属于上海菜，因上海小绍兴鸡粥点所创而得名；选用上海名产“三黄鸡”.
+					</div>
+					<div class="like">
+						<img src="../img/h-img/h-eye-icon.png" alt="" />
+						5858
+						<img src="../img/h-img/h-heart-2.png"/>
+						5858
+					</div>
+				</div>
+			</div>
+			<!--详情结束-->
+			<!--料理-->
+			<div class="h-title-1">
+				<div class="h-title_1"></div>
+			</div>
+			<div class="h-food-box">
+				<p>主料 <span> 2人份</span></p>
+				<h6>三黄鸡 <div></div><span>500g</span></h6>
+				<p>辅料 <span> 2人份</span></p>
+				<h6>草果 <div></div><span>20g</span></h6>
+				<h6>八角 <div></div><span>200g</span></h6>
+				<h6>小茴香 <div></div><span>50g</span></h6>
+				<h6>辣椒 <div></div><span>1个</span></h6>
+				<h6>姜 <div></div><span>1块</span></h6>
+				<h6>食盐 <div></div><span>3大勺</span></h6>
+				<div class="box-a">
+					<a href="" class="turn">用量选择</a>
+					<a href="" class="vegetable"><i></i>选择</a>
+					<a href="" class="choose">食材选择</a>
+				</div>
+			</div>
+			<!--料理结束-->
+			<!--美食做法-->
+			<!--<div class="h-title-1" >
+				<div class="h-title_1" style="background-image: url(../img/h-img/h-fooddo.png);"></div>
+			</div>
+			-->
+			
+			
+		</div>
+	
+	</div>
+	<footer>
+			<a href="" class='q-xinxi'><img src="../img/qyh-img/xiaoxi.png" alt="" /></a>
+			<a href="" class="shoucang"><img src="../img/qyh-img/shoucang.png" alt="" /></a>
+			<a href="" class=""><img src="../img/qyh-img/lingcun.png" alt="" /></a>
+	</footer>
+	</body>
+	<script type="text/javascript">
+	var myscroll=new IScroll("#h-iscroll",{
+		mouseWheel:true,
+		scrollbars:false,
+		click:true,
+	});
+	</script>
+</html>
