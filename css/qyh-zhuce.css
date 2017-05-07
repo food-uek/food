@@ -49,7 +49,7 @@ article.q-form >.q-ti{
 }
 article.q-form >.q-ti > li{
 	width:50%;
-	height:0.5rem;
+	height:0.6rem;
 	text-align: center;
 	line-height: 0.5rem;
 	font-size: 0.24rem;
@@ -58,7 +58,7 @@ article.q-form >.q-ti > li{
 	border-radius: 3px 3px 0 0;
 }
 article.q-form >.q-ti > li.q-active{
-	height:100%;
+	height:110%;
 	margin-top:0 ;
 	line-height: 0.65rem;
 	color:#FFDC3B;
@@ -189,7 +189,7 @@ div.q-phone > form.q-active{
 div.tj{
 	/*display: none;*/
 	position: absolute;
-	top:4.3rem;
+	top:3.5rem;
 	left:1.2rem;
 	background-image:url(../img/qyh-img/gongxi.png) ;
 	background-size:cover ;
@@ -218,11 +218,13 @@ div.tj >a{
 	right:0rem;
 	width:2.99rem;
 	display: block;
+	height:0.335rem;
+	line-height: 0;
 }
 div.tj >a> img{
-	position: absolute;
-	bottom:0.5rem;
-	right:0rem;
+	/*position: absolute;*/
+	/*bottom:0.5rem;*/
+	/*right:0rem;*/
 	width:2.99rem
 }
 div.tj.q-active{

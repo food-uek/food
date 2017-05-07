@@ -14,10 +14,10 @@ $(function(){
 		})
 	}
 	cha('.q-phone > form > input[name="phone"]','.q-form1 > div.q-chacha1');
-	let falg=true;
+	var falg=true;
 	$('.q-phone > form > .yj').on('touchstart',function(){
-		let qq=this.nextElementSibling.value;;
-		let ww=$(this).next().eq(0);
+		var qq=this.nextElementSibling.value;;
+		var ww=$(this).next().eq(0);
 		if(falg){
 			falg=false;
 			ww.val(' ')
@@ -30,6 +30,9 @@ $(function(){
 			ww.attr('type','password').val(qq);
 			ww.val(qq);
 		}
+	})
+	$('input[type=submit]').on('touchstart',function(){
+		$('.tj').addClass('q-active');
 	})
 	$(function(){
 		$('.q-form1').validate({
@@ -72,9 +75,9 @@ $(function(){
 					rangelength: $.validator.format(''),
 				}
 			},
-			success:function(){
-				$('.tj').addClass('q-active');
-			},
+//			success:function(){
+//				$('.tj').addClass('q-active');
+//			},
 			
 		})
 		$('.q-form2').validate({
@@ -98,10 +101,9 @@ $(function(){
 				},
 			},
 			messages:{
-				phone:{
+				email:{
 					required:' ',
-					rangelength: $.validator.format(''),
-					number:'',
+					email:"",
 				},
 				zcma1: {
 					required: '',

@@ -15,10 +15,10 @@ $(function(){
 	}
 	cha('.q-form1 > input[type="text"]:first-of-type','.q-form1 > div.q-chacha1');
 	
-	let falg=true;
+	var falg=true;
 	$('.q-phone > form > .yj').on('touchstart',function(){
-		let qq=this.nextElementSibling.value;;
-		let ww=$(this).next().eq(0);
+		var qq=this.nextElementSibling.value;;
+		var ww=$(this).next().eq(0);
 		if(falg){
 			falg=false;
 			ww.val(' ')

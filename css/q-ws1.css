@@ -77,12 +77,18 @@ section > .tianjia > li{
 	border-radius: 10px;
 	text-align: center;
 	line-height: 0.4rem;
+	
 }
 section > .tianjia > li.zong{
 	background: #fb7070;
 }
 section > .tianjia > li:not(.zong){
 	background: #FFDC3B;
+	margin-left: 0.5rem;
+	font-size: 0.24rem;
+	color: #fff;
+	text-align: center;
+	/*line-height: 1rem;*/
 }
 section > .xuanze{
 	width:94%;

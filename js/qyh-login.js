@@ -18,10 +18,10 @@ $(function(){
 	}
 	cha('.q-phone > form.q-form1 > input[type="text"]','.q-form1 > div.q-chacha1');
 	cha('.q-phone > form.q-form2 > input[type="text"]','.q-form2 > div.q-chacha1');
-	let falg=true;
+	var falg=true;
 	$('.q-phone > form > .yj').on('touchstart',function(){
-		let qq=this.nextElementSibling.value;;
-		let ww=$(this).next().eq(0);
+		var qq=this.nextElementSibling.value;
+		var ww=$(this).next().eq(0);
 		if(falg){
 			falg=false;
 			ww.val(' ')
@@ -76,9 +76,8 @@ $(function(){
 			},
 			messages:{
 				email:{
-					required:' ',
-					rangelength: $.validator.format(''),
-					number:'',
+					required:"",
+					email:"",
 				},
 				mima2: {
 					required: "",
