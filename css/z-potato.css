@@ -261,28 +261,28 @@ body {
     background: #ffde27;
     color:white;
 }
-.z-zhanwei2{
-    height:2.16rem;
-    position: relative;
-}
+/*.z-zhanwei2{*/
+    /*height:2.16rem;*/
+    /*position: relative;*/
+/*}*/
 /*.z-cardt{*/
     /*height:2.16rem;*/
 /*}*/
-.z-cardt{
-    position: absolute;
-    left:0;
-    top:0;
-    display: none;
-    height:2.16rem;
-}
-.z-zhanwei2 .first{
-    display: block;
-}
+/*.z-cardt{*/
+    /*position: absolute;*/
+    /*left:0;*/
+    /*top:0;*/
+    /*display: none;*/
+    /*height:2.16rem;*/
+/*}*/
+/*.z-zhanwei2 .first{*/
+    /*display: block;*/
+/*}*/
 /*.z-slide{*/
    /*width: .9rem;*/
 /*}*/
 .z-huadong{
-    display: block;
+    display: none;
     float: left;
     position: relative;
     width:1.8rem;
@@ -312,5 +312,82 @@ body {
     left:0;
     top:1.7rem;
 }
+.z-slide .first{
+    display: block;
+}
 /*第四部分结束*/
+/*相关菜谱开始*/
+/*主体部分*/
+main{
+    width: 7rem;
+    margin: 0.3rem 0.26rem 0;
+    height: auto;
+    background: #fff;
+    border-radius: 0.05rem;
+    padding-bottom: 0.5rem;
+}
+
+.c-zc-list >li{
+    width: 100%;
+    height: 2.4rem;
+    box-shadow: 1px 0 0.1rem 0 #e4e4e4;
+    border-radius: 0.05rem;
+    border: 1px solid #f3f3f3;
+    box-sizing: border-box;
+    margin-bottom: 0.3rem;
+}
+.c-zc-list >li .c-left{
+    width: 33%;
+    float: left;
+    padding: 0.2rem 0.12rem;
+}
+.c-left >img{
+    width: 2rem;
+}
+.c-zc-list >li .c-right{
+    width: 56%;
+    float: left;
+    padding-right: 0.36rem;
+}
+.c-right >.c-cname{
+    font-size: 0.28rem;
+    font-weight: 400;
+    color: #3e3e3e;
+    margin-top: 0.04rem;
+}
+.c-right >.c-engname{
+    font-size: 0.22rem;
+    font-family: "San Francisco Display";
+    color: #ffdc3b;
+    text-transform: uppercase;
+}
+.c-right >.c-rect{
+    width: 0.26rem;
+    height: 0.03rem;
+    background: #ffdc3b;
+    margin: 0.06rem 0;
+}
+.c-right >.assess{
+    font-size: 0.2rem;
+    color: #474747;
+}
+.c-right > .c-x{
+    color: #cfcfcf;
+    font-size: 0.2rem;
+}
+.c-right >.look,.c-right >.xin{
+    width: 50%;
+    float: left;
+}
+.look>img{
+    width: 0.32rem;
+}
+.look>span,.xin>span{
+    font-size: 0.22rem;
+    color:#656565;
+}
+.xin >img{
+    width: 0.3rem;
+}
+/*相关菜谱结束*/
 /*内容结束*/
