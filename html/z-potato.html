@@ -15,7 +15,7 @@
 <body>
 <!--头部开始-->
 <div id="header">
-    <a onclick="history.go">
+    <a onclick="history.go(-1)">
         <img class="z-return" src="../img/z-img/z-return.png" alt="">
     </a>
     <img class="z-tupian1" src="../img/z-img/z-potato.png" alt="">
@@ -116,60 +116,60 @@
                 <div class="swiper-container z-cardt">
                     <div class="swiper-wrapper z-card ">
                         <div class="swiper-slide z-slide">
-                            <a class="z-huadong first" onclick="history.go">
+                            <a class="z-huadong first" onclick="history.go(-1)">
                                 <img class="z-dacontent" src="../img/z-img/z-rou.png" alt="">
                                 <p></p>
                                 <p></p>
                             </a>
-                            <a class="z-huadong" onclick="history.go">
+                            <a class="z-huadong" onclick="history.go(-1)">
                                 <img class="z-dacontent" src="../img/z-img/z-rou.png" alt="">
                                 <p>五花肉</p>
                                 <p></p>
                             </a>
                         </div>
                         <div class="swiper-slide z-slide">
-                            <a class="z-huadong first" onclick="history.go">
+                            <a class="z-huadong first" onclick="history.go(-1)">
                                 <img class="z-dacontent" src="../img/z-img/z-bear.png" alt="">
                                 <p>醋</p>
                                 <p>分解有毒物质</p>
                             </a>
-                            <a class="z-huadong" onclick="history.go">
+                            <a class="z-huadong" onclick="history.go(-1)">
                                 <img class="z-dacontent" src="../img/z-img/z-bear.png" alt="">
                                 <p>醋</p>
                                 <p>分解有毒物质</p>
                             </a>
                         </div>
                         <div class="swiper-slide z-slide">
-                            <a class="z-huadong first" onclick="history.go">
+                            <a class="z-huadong first" onclick="history.go(-1)">
                                 <img class="z-dacontent" src="../img/z-img/z-tomatoes.png" alt="">
                                 <p>西红柿</p>
                                 <p>防止肌肤衰老</p>
                             </a>
-                            <a class="z-huadong" onclick="history.go">
+                            <a class="z-huadong" onclick="history.go(-1)">
                                 <img class="z-dacontent" src="../img/z-img/z-bear.png" alt="">
                                 <p>醋</p>
                                 <p>分解有毒物质</p>
                             </a>
                         </div>
                         <div class="swiper-slide z-slide">
-                            <a class="z-huadong first" onclick="history.go">
+                            <a class="z-huadong first" onclick="history.go(-1)">
                                 <img class="z-dacontent" src="../img/z-img/z-bean.png" alt="">
                                 <p>豆角</p>
                                 <p>防呕吐腹泻胃炎</p>
                             </a>
-                            <a class="z-huadong " onclick="history.go">
+                            <a class="z-huadong " onclick="history.go(-1)">
                                 <img class="z-dacontent" src="../img/z-img/z-bear.png" alt="">
                                 <p>醋</p>
                                 <p>分解有毒物质</p>
                             </a>
                         </div>
                         <div class="swiper-slide z-slide">
-                            <a class="z-huadong first" onclick="history.go">
+                            <a class="z-huadong first" onclick="history.go(-1)">
                                 <img class="z-dacontent" src="../img/z-img/z-row.png" alt="">
                                 <p></p>
                                 <p></p>
                             </a>
-                            <a class="z-huadong" onclick="history.go">
+                            <a class="z-huadong" onclick="history.go(-1)">
                                 <img class="z-dacontent" src="../img/z-img/z-bear.png" alt="">
                                 <p>醋</p>
                                 <p>分解有毒物质</p>
@@ -348,8 +348,6 @@
     </div>
 </div>
 <!--内容结束-->
-</body>
-</html>
 <script>
     window.onload=function(){
         var myScroll;
@@ -357,17 +355,19 @@
             freeScroll: true,
         });
     }
-//    setInterval(function(){
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 3.4,
-            paginationClickable: true,
-            spaceBetween: 20
-        });
-//        var swiper = new Swiper('.swiper-container2', {
-//            slidesPerView: 3.4,
-//            paginationClickable: true,
-//            spaceBetween: 60
-//        });
-//    },1000);
+    //    setInterval(function(){
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3.4,
+        paginationClickable: true,
+        spaceBetween: 20
+    });
+    //        var swiper = new Swiper('.swiper-container2', {
+    //            slidesPerView: 3.4,
+    //            paginationClickable: true,
+    //            spaceBetween: 60
+    //        });
+    //    },1000);
 
 </script>
+</body>
+</html>
