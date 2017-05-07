@@ -18,23 +18,23 @@ $(function(){
         // 如果开关打开就添加一个li
         let that=$(this);
         // console.log(that)
-        if(flag){
+        // if(flag){
 
             arr.forEach(function (value,index) {
                 // if (!value==that.children('*:nth-child(3)').children('span').html()){
                     arr.push(name);
-                    console.log(1)
+
                 // }
                 console.log(arr);
             })
             $(`<li type=${name}>`).html(`<span>${name}</span>
             <img src="../img/c-img/cha.png">`).appendTo('.c-xuan');
             flag=false;
-        }
+        // }
 
-        else{
-            flag=true;
-        }
+        // else{
+        //     flag=true;
+        // }
 
     })
 
