@@ -6,11 +6,11 @@
 	padding-left: 0.24rem;
 	padding-right: 0.24rem;
 }
-.l-banner>p{
-	font-size: 0.7rem;
-	float: left;
-	font-family: "微软雅黑";
-	color: #FFf;
+.l-banner>a{
+    display: block;
+    float: left;
+    height:.48rem;
+    margin-top: -0.2rem;
 }
 .l-banner>img{
 	margin: 0 auto;
@@ -28,7 +28,6 @@
 .l-z{
 	width: 1.75rem;
 	height: 0.43rem;
-	background: red;
 	margin-top: 1.2rem;
 	font-size: 0;
 }
@@ -62,7 +61,7 @@
 	color: #e6e6e6;
 	font-weight: normal;
 }
-.l-h>h5{
+.l-h>a>h5{
 	font-size: 0.3rem;
 	margin-top: 0.1rem;
 	margin-left: 1rem;
@@ -90,7 +89,6 @@
 .l-zz{
 	width: 1.75rem;
 	height: 0.43rem;
-	background: red;
 	margin-top: 0.5rem;
 	font-size: 0;
 }
@@ -108,7 +106,7 @@
 .l-imgg>img{
 	width: 100%;
 }
-.l-imgg>p{
+.l-imgg>a>p{
 	font-size: 0.3rem;
 	position: absolute;
 	left: 30%;
