@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-    <title>Title</title>
+    <title>土豆</title>
     <link rel="stylesheet" href="../css/swiper.min.css">
     <link rel="stylesheet" href="../css/z-potato.css">
     <script src="../js/common/swiper.min.js"></script>
     <script src="../js/common/zepto.min.js"></script>
     <script type="text/javascript" src="../js/common/iscroll.js"></script>
     <script type="text/javascript" src="../js/common/common.js"></script>
+    <script src="../js/z-potato.js"></script>
 </head>
 <body>
 <!--头部开始-->
@@ -109,45 +110,87 @@
                     <p class="z-dapeifen">· 不宜搭配 ·</p>
                 </div>
             </div>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a class="z-huadong" href="">
-                            <img class="z-dacontent" src="../img/z-img/z-rou.png" alt="">
-                            <p></p>
-                            <p></p>
-                        </a>
+            <div class="z-zhanwei2">
+                <div class="swiper-container1 z-cardt first">
+                    <div class="swiper-wrapper z-card ">
+                        <div class="swiper-slide">
+                            <a class="z-huadong" href="">
+                                <img class="z-dacontent" src="../img/z-img/z-rou.png" alt="">
+                                <p></p>
+                                <p></p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="z-huadong" href="">
+                                <img class="z-dacontent" src="../img/z-img/z-bear.png" alt="">
+                                <p>醋</p>
+                                <p>分解有毒物质</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="z-huadong" href="">
+                                <img class="z-dacontent" src="../img/z-img/z-tomatoes.png" alt="">
+                                <p>西红柿</p>
+                                <p>防止肌肤衰老</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="z-huadong" href="">
+                                <img class="z-dacontent" src="../img/z-img/z-bean.png" alt="">
+                                <p>豆角</p>
+                                <p>防呕吐腹泻胃炎</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="z-huadong" href="">
+                                <img class="z-dacontent" src="../img/z-img/z-row.png" alt="">
+                                <p></p>
+                                <p></p>
+                            </a>
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <a class="z-huadong" href="">
-                            <img class="z-dacontent" src="../img/z-img/z-bear.png" alt="">
-                            <p>醋</p>
-                            <p>分解有毒物质</p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a class="z-huadong" href="">
-                            <img class="z-dacontent" src="../img/z-img/z-tomatoes.png" alt="">
-                            <p>西红柿</p>
-                            <p>防止肌肤衰老</p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a class="z-huadong" href="">
-                            <img class="z-dacontent" src="../img/z-img/z-bean.png" alt="">
-                            <p>豆角</p>
-                            <p>防呕吐腹泻胃炎</p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a class="z-huadong" href="">
-                            <img class="z-dacontent" src="../img/z-img/z-row.png" alt="">
-                            <p></p>
-                            <p></p>
-                        </a>
+                </div>
+                <div class="swiper-container2 z-cardt ">
+                    <div class="swiper-wrapper z-card ">
+                        <div class="swiper-slide z-slide">
+                            <a class="z-huadong" href="">
+                                <img class="z-dacontent" src="../img/z-img/z-rou.png" alt="">
+                                <p>五花肉</p>
+                                <p></p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide z-slide">
+                            <a class="z-huadong" href="">
+                                <img class="z-dacontent" src="../img/z-img/z-bear.png" alt="">
+                                <p>醋</p>
+                                <p>分解有毒物质</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide z-slide">
+                            <a class="z-huadong" href="">
+                                <img class="z-dacontent" src="../img/z-img/z-tomatoes.png" alt="">
+                                <p>西红柿</p>
+                                <p>防止肌肤衰老</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide z-slide">
+                            <a class="z-huadong" href="">
+                                <img class="z-dacontent" src="../img/z-img/z-bean.png" alt="">
+                                <p>豆角</p>
+                                <p>防呕吐腹泻胃炎</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide z-slide">
+                            <a class="z-huadong" href="">
+                                <img class="z-dacontent" src="../img/z-img/z-row.png" alt="">
+                                <p></p>
+                                <p></p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
         <!--第四部分结束-->
     </div>
@@ -164,9 +207,14 @@
 //            fadeScrollbars:true
         });
     }
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.swiper-container1', {
         slidesPerView: 3.4,
         paginationClickable: true,
-        spaceBetween: 20
+        spaceBetween: 60
+    });
+    var swiper = new Swiper('.swiper-container2', {
+        slidesPerView: 3.4,
+        paginationClickable: true,
+        spaceBetween: 60
     });
 </script>
