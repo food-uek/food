@@ -4,7 +4,7 @@
 $(function () {
     var navs=$('.c-image>div');
     var items=$('.c-can-con');
-    var circles=$('.c-line>li')
+    var circles=$('.c-line >li');
     navs.each(function (index) {
         $(this).on('touchstart',function () {
             navs.removeClass('first');

@@ -55,6 +55,7 @@ body{
 .c-selected{
     margin-left: 0.3rem;
     margin-top: 0.12rem;
+    overflow: hidden;
 }
 .c-selected>span,.c-selected>ul li{
     float: left;
@@ -63,8 +64,12 @@ body{
     font-size: 0.24rem;
     color: #fff;
 }
+/*.c-selected>ul{*/
+    /*width: 100%;*/
+    /*height: ;*/
+/*}*/
 .c-selected>ul li{
-    width: 1.1rem;
+    width: 1.2rem;
     height: 0.4rem;
     background: #fff;
     border-radius: 0.28rem;
