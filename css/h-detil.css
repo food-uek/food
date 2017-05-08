@@ -233,6 +233,7 @@
   justify-content: space-around;
   padding-left: 0.4rem;
   padding-right: 0.4rem;
+  line-height: 0.4rem;
 }
 
 .h-food-box .box-a .turn {
