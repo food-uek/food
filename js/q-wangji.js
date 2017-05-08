@@ -13,7 +13,7 @@ $(function(){
 			})
 		})
 	}
-	cha('.q-form1 > input[type="text"]:first-of-type','.q-form1 > div.q-chacha1');
+	cha('.q-form1 > input:first-of-type','.q-form1 > div.q-chacha1');
 	
 	var falg=true;
 	$('.q-phone > form > .yj').on('touchstart',function(){
