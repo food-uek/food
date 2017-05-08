@@ -80,7 +80,7 @@ body {
     height: auto;
     user-select: none;
     left:0;
-    top:0rem;
+    top:-0.88rem;
 }
 /*第一部分开始*/
 .z-zhanwei{
@@ -94,7 +94,7 @@ body {
 .z-tuoyuan{
     position: absolute;
     left: 0;
-    top:-1.44rem;
+    top:-.44rem;
     width:100%;
 }
 .z-biaoti{
@@ -102,7 +102,7 @@ body {
     height:3.3rem;
     position: absolute;
     left:.24rem;
-    top:0rem;
+    top:0.88rem;
     box-shadow: 0 0  10px #dfdfdf;
     background: white;
     border-radius: .1rem;
