@@ -15,9 +15,9 @@ $(function(){
         $(".z-false1").css("display","block");
 
     });
-    document.addEventListener("touchstart",function(e){
-        e.preventDefault();
-    });
+    // document.addEventListener("touchstart",function(e){
+    //     e.preventDefault();
+    // });
     $(".z-down2").on("touchend",function(){
         $(".z-down2").removeClass("z-down1");
         $(".z-down3").addClass("z-down1");
