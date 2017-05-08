@@ -417,7 +417,7 @@ body {
     z-index: 10000;
 }
 .z-downz{
-    margin: 10.5rem auto 0;
+    margin: 9.5rem auto 0;
     height:.6rem;
     position: relative;
 }
@@ -448,7 +448,7 @@ body {
     color: #ffdc3b;
     font-size: .24rem;
     position: absolute;
-    top:-2.5rem;
+    top:-2.7rem;
     left:.35rem;
     display: none;
 }
@@ -456,7 +456,7 @@ body {
     width:.32rem;
     position: absolute;
     right: .5rem;
-    top:-3rem;
+    top:-3.2rem;
     display: none;
 }
 .z-false1{
