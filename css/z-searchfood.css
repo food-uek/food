@@ -97,7 +97,7 @@ body {
 #scroller {
     position: absolute;
     left:0;
-    top:0rem;
+    top:-0.88rem;
     z-index: 1;
     width:100%;
     height: auto;
@@ -199,7 +199,7 @@ body {
     height:.47rem;
     background-image: url("../img/z-img/z-beijing.png");
     background-size:cover;
-    margin: 0rem -.36rem 0;
+    margin: 0.88rem -.36rem 0;
     padding:0 .36rem;
 }
 .z-box{
