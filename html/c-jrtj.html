@@ -60,16 +60,14 @@
 </body>
 </html>
 <script>
+    var arr=["早餐","午餐","晚餐"];
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         paginationClickable: true,
         paginationBulletRender: function (swiper, index, className) {
-            return '<span class="' + className + '">' + (index + 1) + '</span>';
+            return `<span class="${className}">${arr[index]} </span>`;
         }
     });
-    var span=$(' .swiper-pagination-bullet');
-    span.eq(0).html('早餐');
-    span.eq(1).html('午餐');
-    span.eq(2).html('晚餐');
+
 
 </script>
