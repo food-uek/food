@@ -33,9 +33,9 @@ $(function(){
 
 
 
-        $('.c-xuan>li').on('touchstart',function () {
-            var typeval=$(this).attr('type');
-            $(this).remove();
+        $('.c-xuan>li').on('touchstart','img',function () {
+            var typeval=$(this).parent().attr('type');
+            $(this).parent().remove();
             $('main >div >ul >li').forEach(function (value,index) {
                 if($(value).children('*:nth-child(3)').children('span').html()==typeval){
                     $('main >div >ul >li').eq(index).children('*:nth-child(2)').removeClass('active');
