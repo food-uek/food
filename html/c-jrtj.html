@@ -19,7 +19,6 @@
         <img class="z-yuyin" src="../img/c-img/search.png" alt="">
     </div>
     <!--头部结束-->
-
     <div class="swiper-container">
         <!--标题栏-->
         <div class="c-biaoti">
@@ -28,7 +27,6 @@
             </div>
         </div>
         <!--标题栏结束-->
-        <!--<div class="swiper-pagination"></div>-->
 
         <!--内容-->
         <div class="swiper-wrapper c-tj-con">
@@ -62,10 +60,6 @@
 </body>
 </html>
 <script>
-    var span=$(' .swiper-pagination-bullet');
-    span.eq(0).html('早餐');
-    span.eq(1).html('午餐');
-    span.eq(2).html('晚餐');
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         paginationClickable: true,
@@ -73,5 +67,9 @@
             return '<span class="' + className + '">' + (index + 1) + '</span>';
         }
     });
+    var span=$(' .swiper-pagination-bullet');
+    span.eq(0).html('早餐');
+    span.eq(1).html('午餐');
+    span.eq(2).html('晚餐');
 
 </script>
