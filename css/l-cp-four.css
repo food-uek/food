@@ -1,6 +1,6 @@
 .l-banner{
 	/* width: 7.5rem; */
-	height: 3.5rem;
+	height: 2.8rem;
 	background-image: url('../img/l-img/l-one.png');
 	overflow: hidden; 
 	padding-left: 0.24rem;
@@ -45,8 +45,7 @@
 .l-banner-two{
 	width: 7.5rem;
 	height: 1.2rem;
-
-	margin-top: 2.4rem;
+	margin-top: 2rem;
 	margin-left: -0.25rem;
 	z-index: 100;
 }

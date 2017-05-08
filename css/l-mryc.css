@@ -13,6 +13,7 @@
         text-align: center;
         font-weight: bold;
         height:.88rem;
+        z-index: 99999999;
     }
     #header .z-return{
         padding-left: 0.2rem;

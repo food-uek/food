@@ -6,6 +6,7 @@
 	padding-left: 0.24rem;
 	padding-right: 0.24rem;
 	position: relative;
+	z-index: 9999999999;
 }
 .l-banner>a{
     display: block;
@@ -35,6 +36,7 @@
 	top:65%;
 	border-radius: 0.5rem;
 	background: #fff;
+	z-index: 9999999;
 }
 
 .l-banner>.l-t>a{
