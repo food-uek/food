@@ -87,7 +87,7 @@ body {
 #wrapper {
     position: absolute;
     z-index: 1;
-    top: 0;
+    top: 0.88rem;
     left: 0;
     bottom:0;
     width: 100%;
@@ -97,7 +97,7 @@ body {
 #scroller {
     position: absolute;
     left:0;
-    top:0.88rem;
+    top:0rem;
     z-index: 1;
     width:100%;
     height: auto;
