@@ -12,6 +12,7 @@ $(function(){
 //    语音特效
     $(".z-yuyin").on("touchend",function(){
         $(".z-zhezhaoz").addClass("z-down1");
+        $(".z-false1").css("display","block");
     });
     $(".z-down2").on("touchend",function(){
         $(".z-down2").removeClass("z-down1");
@@ -23,7 +24,7 @@ $(function(){
             $(".z-down2").addClass("z-down1");
         },1000);
     });
-    $(".z-move").on("touchstart",function(){
+    $(".z-false1").on("touchstart",function(){
         $(".z-zhezhaoz").removeClass("z-down1");
     });
     $(".z-false").on("touchstart",function(){
@@ -44,6 +45,7 @@ $(function(){
                  $(this).removeClass("z-index");
             });
             $(".z-total li:nth-child(3)").addClass("z-index");
+
         }else if($(".z-input")[0].value=="西式早餐"){
             $(".z-searchz").each(function(value){
                 $(this).removeClass("z-index");

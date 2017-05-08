@@ -456,6 +456,13 @@ body {
     top:-4rem;
     display: none;
 }
+.z-false1{
+    width:.32rem;
+    float:right;
+    margin-right: .3rem;
+    margin-top: .5rem;
+    display: none;
+}
 .z-down1{
     display: block;
 }
