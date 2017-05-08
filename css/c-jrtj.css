@@ -29,22 +29,7 @@ body{
     text-align: center;
     position: relative;
 }
-.c-image div:after,.c-image div:before{
-    content: "";
-    display: block;
-    position: absolute;
-    width: 0.04rem;
-    height: 0.04rem;
-    background: #fff;
-    border-radius: 50%;
-    top: .14rem;
-}
-.c-image div:after{
-    right: .06rem;
-}
-.c-image div:before{
-    left: .06rem;
-}
+
 .c-image div.first{
     background: #ffdc3b;
     color: #fff;
@@ -55,9 +40,10 @@ body{
 .c-tj-con{
     width: 100%;
 }
-.c-can-con{
+.swiper-slide.c-can-con{
     margin: .38rem .24rem;
-    display: none;
+    /*display: none;*/
+    display: block;
 }
 .c-can-con.active{
     display: block;
@@ -105,31 +91,57 @@ body{
     background-size: cover;
     box-shadow: 0 0 .15rem 0 #ffdc3b;
 }
-.c-line{
-    width: 2.4rem;
-    height: 0.08rem;
-    position: relative;
-    left: 50%;
-    margin-left: -1.2rem;
-}
-.c-line >li{
-    width: .5rem;
-    height: 100%;
-    background: #fff;
-    float: left;
-    margin-right: .28rem;
-}
-.c-line >li.c-active{
-    background: #ffdc3b;
-}
 
 
+/*swiper*/
 .swiper-container {
     width: 100%;
     height: 100%;
 }
 .swiper-slide {
     text-align: center;
+
+    /* Center slide text vertically */
     display: flex;
+    justify-content: center;
     align-items: center;
 }
+
+div.swiper-pagination{
+   transition: none;
+    left: 50%;
+    margin-left: -2.06rem;
+}
+.swiper-pagination .swiper-pagination-bullet {
+    opacity: 1;
+    width: .82rem;
+    height: .32rem;
+    font-size: 0.24rem;
+    color: #ffdc3b;
+    margin-top: 0.15rem;
+    text-align: center;
+    position: relative;
+    background: #fff;
+}
+.swiper-pagination .swiper-pagination-bullet:after,.swiper-pagination .swiper-pagination-bullet:before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0.04rem;
+    height: 0.04rem;
+    background: #fff;
+    border-radius: 50%;
+    top: .14rem;
+}
+.swiper-pagination .swiper-pagination-bullet:after{
+    right: .06rem;
+}
+.swiper-pagination .swiper-pagination-bullet:before{
+    left: .06rem;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #ffdc3b;
+    color: #fff;
+    border-radius: .16rem;
+}
+
