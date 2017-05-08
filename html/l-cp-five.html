@@ -6,6 +6,11 @@
 	<link rel="stylesheet" href="../css/l-cp-five.css">
 	<link rel="stylesheet" href="../css/common.css">
 	<script src="../js/common/common.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+	<script src="../js/common/common.js"></script>
+	<script src="../js/common/swiper.min.js"></script>
+	<script type="text/javascript" src="../js/common/iscroll.js"></script>
+	<script type="text/javascript" src="../js/common/zepto.min.js"></script>
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 
 	<meta name="x5-orientation" content="portrait | landscape" />
@@ -17,8 +22,31 @@
 		<!--禁止打电话、登录邮箱-->
 	<meta name="format-detection" content="telephone=no, email=no" />
 </head>
-<body>
-	<div class="bj">
+<script type="text/javascript">
+        var myScroll;
+    function loaded(){
+         myScroll = new IScroll('#wrapper', {
+                scrollbars: false,
+                mouseWheel: true,
+                interactiveScrollbars: true,
+                shrinkScrollbars: 'scale',
+                fadeScrollbars: true,
+                click:true
+	     });
+        }
+</script>
+	<style>
+		#wrapper {
+		width:100%;
+		height: 11.8rem;
+		
+		position: relative;
+		z-index: 999;
+			}	
+	</style>	
+<body onload="loaded()">
+<div id="wrapper">
+		<div class="gjr_box" id='scroller'>	<div class="bj">
 		<div class="l-banner">
 			<a onclick="history.go(-1)">
 			<img class="z-return" src="../img/z-img/z-return.png" alt="">
@@ -73,3 +101,15 @@
 	</div>
 </body>
 </html>
+<script>	
+
+$(document).ready(function(){
+	    var swiper = new Swiper('.swiper-container',{
+	    	slidesPerView:'auto',
+	    });		
+	});
+
+
+
+
+</script>

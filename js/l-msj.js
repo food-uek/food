@@ -1,6 +1,6 @@
 window.onload=function(){
-	let li=document.querySelectorAll('.l-t a p');
-	let z=document.querySelectorAll('.bbj');
+	var li=document.querySelectorAll('.l-t a p');
+	var z=document.querySelectorAll('.bbj');
 
  for(let i=0;i<li.length;i++){
      li[i].onmouseover=function(){
