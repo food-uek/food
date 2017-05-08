@@ -4,6 +4,11 @@ body{
     font-size: 16px;
     background: #efefef;
 }
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
 /*标题栏*/
 .c-biaoti{
     width: 100%;
@@ -20,28 +25,16 @@ body{
     display: flex;
     justify-content: space-around;
 }
-.c-image div{
-    width: .82rem;
-    height: .32rem;
-    font-size: 0.24rem;
-    color: #ffdc3b;
-    margin-top: 0.15rem;
-    text-align: center;
-    position: relative;
-}
 
-.c-image div.first{
-    background: #ffdc3b;
-    color: #fff;
-    border-radius: .16rem;
-}
 /*标题栏结束*/
 /*内容*/
 .c-tj-con{
     width: 100%;
 }
 .swiper-slide.c-can-con{
-    margin: .38rem .24rem;
+    margin: .38rem 0;
+    padding: 0 .24rem;
+    box-sizing: border-box;
     /*display: none;*/
     display: block;
 }

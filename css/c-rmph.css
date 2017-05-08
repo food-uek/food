@@ -108,10 +108,9 @@ body{
     color: #454545;
     margin-left: .2rem;
     float: left;
+    line-height: .4rem;
 }
-.c-mokuai .c-w-gongneng .c-w-t{
-    margin-top: .05rem;
-}
+
 .c-mokuai .caixi{
     width: .52rem;
     position: absolute;
