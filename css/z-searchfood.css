@@ -110,9 +110,12 @@ body {
     display:none;
 }
 #scroller .z-hot{
-    margin-top: .45rem;
+    margin-top: 1.45rem;
     width:1.85rem;
     padding:0 .36rem;
+}
+#scroller .z-hot1{
+    margin-top: 0;
 }
 #scroller .z-juti .z-juti1{
     height:.5rem;
@@ -405,7 +408,7 @@ body {
     position: fixed;
     top:0rem;
     left:0;
-    z-index: 5;
+    /*z-index: 5;*/
     width: 100%;
     background-image: url("../img/z-img/z-zhezhao.png");
     background-size: contain;
@@ -414,7 +417,7 @@ body {
     z-index: 10000;
 }
 .z-downz{
-    margin: 11rem auto 0;
+    margin: 12rem auto 0;
     height:.6rem;
     position: relative;
 }

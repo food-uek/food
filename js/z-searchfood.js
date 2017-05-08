@@ -13,6 +13,10 @@ $(function(){
     $(".z-yuyin").on("touchend",function(){
         $(".z-zhezhaoz").addClass("z-down1");
         $(".z-false1").css("display","block");
+
+    });
+    document.addEventListener("touchstart",function(e){
+        e.preventDefault();
     });
     $(".z-down2").on("touchend",function(){
         $(".z-down2").removeClass("z-down1");
