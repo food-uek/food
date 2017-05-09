@@ -305,6 +305,7 @@ footer {
   border-top: 1px solid #ebebeb;
   display: flex;
   justify-content: space-around;
+  background: #FFFFFF;
 }
 
 footer > a {
