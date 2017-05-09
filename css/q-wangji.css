@@ -1,8 +1,9 @@
 @import url("swiper.min.css" );
 @import url('common.css');
-html{
+html,body{
 	background-image:url(../img/qyh-img/q-bg.png) ;
 	background-size:cover ;
+	overflow:hidden;
 }
 header{
 	height:0.88rem;

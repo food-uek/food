@@ -4,6 +4,7 @@ html,body{
 	height:100%;
 	background-image:url(../img/qyh-img/xinxi.png) ;
 	background-size: cover;
+	overflow:hidden;
 }
 #header {
     position: absolute;
