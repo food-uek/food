@@ -224,7 +224,6 @@ section.zhe{
     width: 100%;
     height: auto;
     overflow: hidden;
-    margin: 0 0 0.2rem 0;
 }
 
 .yixuan>span{
@@ -257,12 +256,12 @@ div.c-btn{
     width: 50%;
     height: 0.6rem;
     float: right;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.6rem;
 }
 .clear{
-    width: 1.35rem;
+    width: 1.5rem;
     height: 0.5rem;
-    border-radius: 0.25rem;
+    border-radius: 0.3rem;
     box-sizing: border-box;
     float: left;
     font-size: 0.24rem;
@@ -270,10 +269,10 @@ div.c-btn{
     text-align: center;
     border: 1px solid #ffdc3b;
     color: #282828;
-    margin-right: 0.3rem;
+    margin-right: 0.25rem;
 }
 .complete>img{
-    width: 1.35rem;
-    height: 0.5rem;
+    width: 1.5rem;
+    /*height: 0.6rem;*/
 }
 
