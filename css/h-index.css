@@ -26,7 +26,7 @@ body, html {
 	left: 0;
 	height: 100%;
 	width: 100%;
-	transition: all 0.5s;
+
 }
 #header .z-return {
   padding-left: 0.36rem;
@@ -650,6 +650,7 @@ ul.zl-grsz >li >a >span{
 .h-active-1{
 	left: 5.3rem;
 	transform: rotateY(-30deg);
+	transition: all 0.5s;
 }
 div.h-active-2{
 	left: 0;
